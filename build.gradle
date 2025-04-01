@@ -1,0 +1,18 @@
+plugins {
+    id 'java'  // Простая, но важная строчка! ✨
+}
+
+repositories {
+    mavenCentral()  // Откуда брать все сокровища
+}
+
+dependencies {
+    // Вот эти строчки - настоящее золото! 💰
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+}
+
+test {
+    useJUnitPlatform()  // Магическая формула для запуска тестов! 🧙‍♂️
+}
